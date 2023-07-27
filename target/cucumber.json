@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-27T20:49:51.599Z",
+        "line": 4,
+        "name": "Apply the price filter",
+        "description": "",
+        "id": "apply-the-price-filter;apply-the-price-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4959909700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user go to provided URL \"https://www.redfin.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.redfin.com/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.Redfin.user_go_to_provided_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181627600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user types a large city name \"Chicago\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.Redfin.user_types_a_large_city_name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45663317500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on the search button",
+            "match": {
+              "location": "Steps.Redfin.user_clicks_on_the_search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7825029500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User apply the price filter with values \"100000\" and \"200000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100000\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"200000\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Steps.Redfin.user_apply_the_price_filter_with_values_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15380692900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the results within the specified range on the first 2 pages \"100000\" and \"200000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 59
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"200000\"",
+                  "offset": 80
+                }
+              ],
+              "location": "Steps.Redfin.verify_the_results_within_the_specified_range_on_the_first_pages(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc1103"
+          }
+        ]
+      }
+    ],
+    "name": "Apply the price filter",
+    "description": "",
+    "id": "apply-the-price-filter",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/redfin.feature",
+    "tags": []
+  }
+]
